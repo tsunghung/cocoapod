@@ -2,15 +2,6 @@
     "authors": "Google, Inc.",
     "cocoapods_version": ">= 1.10.0",
     "default_subspecs": "AdIdSupport",
-    "dependencies": {
-        "FirebaseCore": "~> 7.0",
-        "FirebaseInstallations": "~> 7.0",
-        "GoogleUtilities/AppDelegateSwizzler": "~> 7.0",
-        "GoogleUtilities/MethodSwizzler": "~> 7.0",
-        "GoogleUtilities/NSData+zlib": "~> 7.0",
-        "GoogleUtilities/Network": "~> 7.0",
-        "nanopb": "~> 2.30908.0"
-    },
     "description": "Firebase Analytics is a free, out-of-the-box analytics solution that inspires actionable insights based on app usage and user engagement.",
     "frameworks": [
         "StoreKit"
@@ -36,12 +27,26 @@
         {
             "name": "AdIdSupport",
             "dependencies": {
+                "FirebaseCore": "~> 7.0",
+                "FirebaseInstallations": "~> 7.0",
+                "GoogleUtilities/AppDelegateSwizzler": "~> 7.0",
+                "GoogleUtilities/MethodSwizzler": "~> 7.0",
+                "GoogleUtilities/NSData+zlib": "~> 7.0",
+                "GoogleUtilities/Network": "~> 7.0",
+                "nanopb": "~> 2.30908.0",
                 "GoogleAppMeasurement/AdIdSupport": "7.11.0"
             }
         },
         {
             "name": "WithoutAdIdSupport",
             "dependencies": {
+                "FirebaseCore": "~> 7.0",
+                "FirebaseInstallations": "~> 7.0",
+                "GoogleUtilities/AppDelegateSwizzler": "~> 7.0",
+                "GoogleUtilities/MethodSwizzler": "~> 7.0",
+                "GoogleUtilities/NSData+zlib": "~> 7.0",
+                "GoogleUtilities/Network": "~> 7.0",
+                "nanopb": "~> 2.30908.0",
                 "GoogleAppMeasurement/WithoutAdIdSupport": "7.11.0"
             }
         }
