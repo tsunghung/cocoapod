@@ -37,21 +37,18 @@
             "name": "AdIdSupport",
             "dependencies": {
                 "GoogleAppMeasurement/AdIdSupport": "7.11.0"
-            },
-            "vendored_frameworks": [
-                "Frameworks/FirebaseAnalytics.xcframework"
-            ]
+            }
         },
         {
             "name": "WithoutAdIdSupport",
             "dependencies": {
                 "GoogleAppMeasurement/WithoutAdIdSupport": "7.11.0"
-            },
-            "vendored_frameworks": [
-                "Frameworks/FirebaseAnalytics.xcframework"
-            ]
+            }
         }
     ],
     "summary": "Firebase Analytics for iOS",
+    "vendored_frameworks": [
+        "Frameworks/FirebaseAnalytics.xcframework"
+    ],
     "version": "7.11.0"
 }
