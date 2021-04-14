@@ -28,22 +28,19 @@
         "ios": "9.0"
     },
     "source": {
-        "http": "https://dl.google.com/firebase/ios/analytics/3fb002f4ae15b5b3/GoogleAppMeasurement-7.11.0.tar.gz"
+        "http": "https://tsunghung.github.io/GoogleAppMeasurement-7.11.0.tar.gz"
     },
     "subspecs": [
         {
             "name": "AdIdSupport",
-            "dependencies": {
-                "GoogleAppMeasurement/WithoutAdIdSupport": "7.11.0"
-            },
             "vendored_frameworks": [
-                "Frameworks/GoogleAppMeasurementIdentitySupport.xcframework"
+                "Frameworks/GoogleAppMeasurement.xcframework"
             ]
         },
         {
             "name": "WithoutAdIdSupport",
             "vendored_frameworks": [
-                "Frameworks/GoogleAppMeasurement.xcframework"
+                "Frameworks/GoogleAppMeasurementWithoutAdIdSupport.xcframework"
             ]
         }
     ],
