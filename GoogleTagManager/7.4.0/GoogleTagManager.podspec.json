@@ -27,7 +27,7 @@
   },
   "resource_bundles": {
     "TagManagerResources": [
-      "Frameworks/GoogleTagManager.xcframework/Resources/**"
+      "Frameworks/GoogleTagManager.xcframework/Resources/TagManagerResources.bundle/TAGRuntime.js.dat"
     ]
   },
   "source": {
