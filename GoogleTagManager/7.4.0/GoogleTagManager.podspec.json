@@ -1,5 +1,6 @@
 {
   "authors": "Google, Inc.",
+  "cocoapods_version": ">= 1.10.2",
   "dependencies": {
     "FirebaseAnalytics": "~> 8.0",
     "GoogleAnalytics": "~> 3.20"
