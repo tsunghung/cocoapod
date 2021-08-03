@@ -27,11 +27,11 @@ let package = Package(
     ),
   ],
   dependencies: [
-    .package(
-      name: "Firebase",
-      url: "https://github.com/firebase/firebase-ios-sdk.git",
-      "8.0.0" ..< "9.0.0"
-    ),
+//    .package(
+//      name: "Firebase",
+//      url: "https://github.com/firebase/firebase-ios-sdk.git",
+//      "8.0.0" ..< "9.0.0"
+//    ),
   ],
   targets: [
     .target(
@@ -39,7 +39,7 @@ let package = Package(
       dependencies: [
         "GoogleTagManager",
         "GoogleAnalytics",
-        .product(name: "FirebaseAnalytics", package: "Firebase"),
+//        .product(name: "FirebaseAnalytics", package: "Firebase"),
       ],
       path: "GoogleTagManagerWrapper",
       linkerSettings: [
