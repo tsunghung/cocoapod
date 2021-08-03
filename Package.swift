@@ -41,7 +41,6 @@ let package = Package(
         "GoogleAnalytics",
         .product(name: "FirebaseAnalytics", package: "Firebase"),
       ],
-      path: "GoogleTagManagerTarget",
       linkerSettings: [
         .linkedLibrary("sqlite3"),
         .linkedLibrary("z"),
