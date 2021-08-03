@@ -55,13 +55,13 @@ let package = Package(
     ),
     .binaryTarget(
       name: "GoogleTagManager",
-      url: "https://tsunghung.github.io/GoogleTagManager.zip"
-      // checksum: "877892d5d60c2aece7488f2e3d65f11e0bb07fc505a54f1c4fdedb197319925b"
+      url: "https://tsunghung.github.io/GoogleTagManager.zip",
+      checksum: "a20a39c071ae5174b3d140bc40e1cd5dbc7e5ec42adc1647dda6f56adb9ef9f9"
     ),
     .binaryTarget(
       name: "GoogleAnalytics",
-      url: "https://tsunghung.github.io/GoogleAnalytics.zip"
-      // checksum: "255e44905b5168a214995f74889eb8245778789c9fe915031099c6b6a481f21a"
+      url: "https://tsunghung.github.io/GoogleAnalytics.zip",
+      checksum: "255e44905b5168a214995f74889eb8245778789c9fe915031099c6b6a481f21a"
     ),
   ],
   cLanguageStandard: .c99,
