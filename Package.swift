@@ -36,35 +36,32 @@ let package = Package(
   targets: [
     .target(
       name: "GoogleTagManagerTarget",
-      dependencies: []
-//      dependencies: [
-//        .target(name: "GoogleTagManager", condition: .when(platforms: [.iOS])),
-//        .target(name: "GoogleAnalytics", condition: .when(platforms: [.iOS])),
-//        .product(name: "FirebaseAnalytics",
-//                 package: "Firebase",
-//                 condition: .when(platforms: [.iOS])),
-//      ],
-//      path: "GoogleTagManagerWrapper",
-//      linkerSettings: [
-//        .linkedLibrary("sqlite3"),
-//        .linkedLibrary("z"),
-//        .linkedFramework("AdSupport"),
-//        .linkedFramework("CoreData"),
-//        .linkedFramework("CoreTelephony"),
-//        .linkedFramework("JavaScriptCore"),
-//        .linkedFramework("SystemConfiguration"),
-//        .linkedFramework("UIKit"),
-//      ]
+      dependencies: [
+        "GoogleTagManager",
+        "GoogleAnalytics",
+        .product(name: "FirebaseAnalytics", package: "Firebase"),
+      ],
+      path: "GoogleTagManagerWrapper",
+      linkerSettings: [
+        .linkedLibrary("sqlite3"),
+        .linkedLibrary("z"),
+        .linkedFramework("AdSupport"),
+        .linkedFramework("CoreData"),
+        .linkedFramework("CoreTelephony"),
+        .linkedFramework("JavaScriptCore"),
+        .linkedFramework("SystemConfiguration"),
+        .linkedFramework("UIKit"),
+      ]
     ),
     .binaryTarget(
       name: "GoogleTagManager",
       url: "https://tsunghung.github.io/GoogleTagManager.zip",
-      checksum: "a20a39c071ae5174b3d140bc40e1cd5dbc7e5ec42adc1647dda6f56adb9ef9f9"
+      checksum: "877892d5d60c2aece7488f2e3d65f11e0bb07fc505a54f1c4fdedb197319925b"
     ),
     .binaryTarget(
       name: "GoogleAnalytics",
       url: "https://tsunghung.github.io/GoogleAnalytics.zip",
-      checksum: "85c7c5b63e27ece7ce8ac417267a1a617ef368a7164b8208af3d2579c6ee1041"
+      checksum: "255e44905b5168a214995f74889eb8245778789c9fe915031099c6b6a481f21a"
     ),
   ],
   cLanguageStandard: .c99,
