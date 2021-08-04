@@ -23,7 +23,7 @@ let package = Package(
   products: [
     .library(
       name: "GoogleTagManager",
-      targets: ["TagManagerResources"]
+      targets: ["GoogleTagManagerTarget", "TagManagerResources"]
     ),
   ],
   dependencies: [
@@ -36,15 +36,17 @@ let package = Package(
   targets: [
     .target(
       name: "TagManagerResources",
+      path: "GoogleTagManagerWrapper",
+      resources: [.copy("Resources/TAGRuntime.js.dat")]
+    ),
+    .target(
+      name: "GoogleTagManagerTarget",
       dependencies: [
         "GoogleTagManager",
         "GoogleAnalytics",
         .product(name: "FirebaseAnalytics", package: "Firebase"),
       ],
       path: "GoogleTagManagerWrapper",
-//      resources: [
-//        .copy("Resources/TAGRuntime.js.dat"),
-//      ],
       linkerSettings: [
         .linkedLibrary("sqlite3"),
         .linkedLibrary("z"),
