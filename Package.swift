@@ -44,7 +44,7 @@ let package = Package(
     .target(
       name: "GoogleTagManagerWrapper",
       dependencies: [
-        .target(name: "GoogleTagManager", condition: .when(platforms: [.iOS])),
+//        .target(name: "GoogleTagManager", condition: .when(platforms: [.iOS])),
         .target(name: "GoogleAnalytics", condition: .when(platforms: [.iOS])),
 //        .product(name: "FirebaseAnalytics",
 //                 package: "Firebase",
