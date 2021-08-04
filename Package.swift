@@ -70,7 +70,7 @@ let package = Package(
     .binaryTarget(
       name: "GoogleAnalytics",
       url: "https://tsunghung.github.io/GoogleAnalytics.zip",
-      checksum: "255e44905b5168a214995f74889eb8245778789c9fe915031099c6b6a481f21a"
+      checksum: "85c7c5b63e27ece7ce8ac417267a1a617ef368a7164b8208af3d2579c6ee1041"
     ),
   ],
   cLanguageStandard: .c99,
