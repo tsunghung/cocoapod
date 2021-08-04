@@ -43,7 +43,8 @@ let package = Package(
 //                 package: "Firebase",
 //                 condition: .when(platforms: [.iOS])),
       ],
-      path: "GoogleTagManagerWrapper",
+      path: "GoogleTagManagerWrapper"
+      //,
 //      linkerSettings: [
 //        .linkedLibrary("sqlite3"),
 //        .linkedLibrary("z"),
