@@ -36,13 +36,14 @@ let package = Package(
   targets: [
     .target(
       name: "GoogleTagManagerTarget",
-      dependencies: [
+      dependencies: []
+//      dependencies: [
 //        .target(name: "GoogleTagManager", condition: .when(platforms: [.iOS])),
 //        .target(name: "GoogleAnalytics", condition: .when(platforms: [.iOS])),
 //        .product(name: "FirebaseAnalytics",
 //                 package: "Firebase",
 //                 condition: .when(platforms: [.iOS])),
-      ],
+//      ],
 //      path: "GoogleTagManagerWrapper",
 //      linkerSettings: [
 //        .linkedLibrary("sqlite3"),
