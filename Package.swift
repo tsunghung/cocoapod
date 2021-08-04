@@ -36,6 +36,7 @@ let package = Package(
   targets: [
     .target(
       name: "GoogleTagManagerTarget",
+      dependencies: [],
 //      dependencies: [
 //        .target(name: "GoogleTagManager", condition: .when(platforms: [.iOS])),
 //        .target(name: "GoogleAnalytics", condition: .when(platforms: [.iOS])),
