@@ -36,8 +36,8 @@ let package = Package(
   targets: [
     .target(
       name: "TagManagerResources",
-      path: "GoogleTagManagerWrapper",
-      resources: [.copy("Resources/TAGRuntime.js.dat")]
+      path: "TagManagerResources",
+      resources: [.copy("TAGRuntime.js.dat")]
     ),
     .target(
       name: "GoogleTagManagerTarget",
