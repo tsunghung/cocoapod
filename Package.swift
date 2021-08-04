@@ -36,12 +36,21 @@ let package = Package(
   targets: [
     .target(
       name: "GoogleTagManagerTarget",
+      dependencies: [.target(name: "GoogleTagManagerWrapper",
+                             condition: .when(platforms: [.iOS]))],
+      path: "SwiftPM-PlatformExclude/GoogleTagManagerWrap"
+    ),
+
+    .target(
+      name: "GoogleTagManagerWrapper",
       dependencies: [
-        "GoogleTagManager",
-        "GoogleAnalytics",
-//        .product(name: "FirebaseAnalytics", package: "Firebase"),
+        .target(name: "GoogleTagManager", condition: .when(platforms: [.iOS])),
+        .target(name: "GoogleAnalytics", condition: .when(platforms: [.iOS])),
+//        .product(name: "FirebaseAnalytics",
+//                 package: "Firebase",
+//                 condition: .when(platforms: [.iOS])),
       ],
-//      path: "GoogleTagManagerWrapper",
+      path: "GoogleTagManagerWrapper",
       linkerSettings: [
         .linkedLibrary("sqlite3"),
         .linkedLibrary("z"),
