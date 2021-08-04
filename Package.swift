@@ -42,9 +42,9 @@ let package = Package(
         .product(name: "FirebaseAnalytics", package: "Firebase"),
       ],
       path: "GoogleTagManagerWrapper",
-      resources: [
-        .copy("Resources/TAGRuntime.js.dat"),
-      ],
+//      resources: [
+//        .copy("Resources/TAGRuntime.js.dat"),
+//      ],
       linkerSettings: [
         .linkedLibrary("sqlite3"),
         .linkedLibrary("z"),
