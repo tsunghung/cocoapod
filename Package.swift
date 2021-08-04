@@ -24,7 +24,7 @@ let package = Package(
     .library(
       name: "GoogleTagManager",
 //      targets: ["GoogleTagManagerTarget"]
-      targets: ["GoogleAnalytics"]
+      targets: ["GoogleTagManager", "GoogleAnalytics"]
     ),
   ],
   dependencies: [
