@@ -23,7 +23,7 @@ let package = Package(
   products: [
     .library(
       name: "GoogleTagManager",
-      targets: ["GoogleTagManagerTarget", "TagManagerResources"]
+      targets: ["GoogleTagManagerTarget"]
     ),
   ],
   dependencies: [
@@ -34,13 +34,6 @@ let package = Package(
     ),
   ],
   targets: [
-  /*
-    .target(
-      name: "TagManagerResources",
-      path: "TagManagerResources",
-      resources: [.process("Resources/TAGRuntime.js.dat")]
-    ),
-    */
     .target(
       name: "GoogleTagManagerTarget",
       dependencies: [
@@ -49,6 +42,7 @@ let package = Package(
         .product(name: "FirebaseAnalytics", package: "Firebase"),
       ],
       path: "GoogleTagManagerWrapper",
+      resources: [.process("Resources/TAGRuntime.js.dat")],
       linkerSettings: [
         .linkedLibrary("sqlite3"),
         .linkedLibrary("z"),
@@ -69,11 +63,6 @@ let package = Package(
       name: "GoogleAnalytics",
       url: "https://tsunghung.github.io/GoogleAnalytics.zip",
       checksum: "255e44905b5168a214995f74889eb8245778789c9fe915031099c6b6a481f21a"
-    ),
-    .binaryTarget(
-      name: "TagManagerResources",
-      url: "https://tsunghung.github.io/TagManagerResources.zip",
-      checksum: "0c8f1bcaf7fe3dc75a5912fc91cfb605d26ef0c7ce9fe71fc406a104b2a8f7ec"
     ),
   ],
   cLanguageStandard: .c99,
