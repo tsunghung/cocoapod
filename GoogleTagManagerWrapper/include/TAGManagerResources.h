@@ -14,9 +14,6 @@
  * limitations under the License.
  */
 
-// Swift Package Manager needs at least one header to prevent a warning. See
-// https://github.com/firebase/firebase-ios-sdk/pull/6504.
-
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
