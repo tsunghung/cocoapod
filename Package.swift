@@ -37,7 +37,7 @@ let package = Package(
     .target(
       name: "GoogleTagManagerTarget",
       dependencies: [
-        // "GoogleTagManager",
+        "GoogleTagManager",
         "GoogleAnalytics",
         .product(name: "FirebaseAnalytics", package: "Firebase"),
       ],
@@ -56,7 +56,7 @@ let package = Package(
     .binaryTarget(
       name: "GoogleTagManager",
       url: "https://tsunghung.github.io/GoogleTagManager.zip",
-      checksum: "7671114d12f3000bcaa6691693bb55765ce534462807aab0a5ea4e46ab7608ea"
+      checksum: "09a6214657b3656baa0ee2ed30a9ebec3d768a7f9422b1c82c5f42dbb5814e5c"
     ),
     .binaryTarget(
       name: "GoogleAnalytics",
