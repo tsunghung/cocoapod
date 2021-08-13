@@ -37,7 +37,7 @@ let package = Package(
     .target(
       name: "GoogleTagManagerTarget",
       dependencies: [
-        "GoogleTagManager",
+        // "GoogleTagManager",
         "GoogleAnalytics",
         .product(name: "FirebaseAnalytics", package: "Firebase"),
       ],
