@@ -14,16 +14,5 @@
  * limitations under the License.
  */
 
-#import "include/TAGManagerResources.h"
-
-NS_ASSUME_NONNULL_BEGIN
-
-@implementation TAGManagerResources
-
-+ (NSBundle *)bundle {
-  return SWIFTPM_MODULE_BUNDLE;
-}
-
-@end
-
-NS_ASSUME_NONNULL_END
+// Swift Package Manager needs at least one header to prevent a warning. See
+// https://github.com/firebase/firebase-ios-sdk/pull/6504.

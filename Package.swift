@@ -57,7 +57,7 @@ let package = Package(
     .binaryTarget(
       name: "GoogleTagManager",
       url: "https://tsunghung.github.io/GoogleTagManager.zip",
-      checksum: "f1ea5ae8bef8638dc92285a5f0f94967c1a2b9eeec07d558d6ee844bda962366"
+      checksum: "7671114d12f3000bcaa6691693bb55765ce534462807aab0a5ea4e46ab7608ea"
     ),
     .binaryTarget(
       name: "GoogleAnalytics",

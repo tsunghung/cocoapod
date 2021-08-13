@@ -14,14 +14,4 @@
  * limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface TAGManagerResources : NSObject
-
-+ (NSBundle *)bundle;
-
-@end
-
-NS_ASSUME_NONNULL_END
+// Swift Package Manager needs at least one source file.
