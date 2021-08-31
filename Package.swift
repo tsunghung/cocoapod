@@ -51,6 +51,7 @@ let package = Package(
         .linkedFramework("JavaScriptCore"),
         .linkedFramework("SystemConfiguration"),
         .linkedFramework("UIKit"),
+        .unsafeFlags("-ObjC"),
       ]
     ),
     .binaryTarget(
